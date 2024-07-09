@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang - K_One Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="img/1699965125248.png" />
+    <link href="css/headers.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        padding-top: 70px;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .total {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+
+      .checkout-btn {
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 100px;
+        max-height: 150px;
+      }
+
+      /* Footer */
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      /* Footer style */
+      .footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footer2 {
+        background-color: #0066ffe0;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main style="padding-top: 70px">
+      <header class="p-3 bg-primary text-white fixed-top">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="img/1699965125248.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />
+            <h3>K_One Book</h3>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></ul>
+
+            <form class="d-flex">
+              <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600; font-family: sans-serif"> Kategori </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="#">Buku Sejarah</a></li>
+                    <li><a class="dropdown-item" href="#">Kamus Bahasa</a></li>
+                    <li><a class="dropdown-item" href="#">Majalah</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Kitab</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Novel</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <input class="form-control me-2" type="search" placeholder="Cari Buku" aria-label="Search" />
+              <button class="btn btn-outline-light me-4" type="submit" style="font-weight: 600; font-family: sans-serif">Cari</button>
+            </form>
+            <div class="text-end">
+              <a href="">
+                <img src="img/Desain tanpa judul (9).png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-4" />
+              </a>
+            </div>
+            <div class="text-end">
+              <img src="img/profil.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-4" />
+            </div>  
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- Content -->
+    <div class="container">
+      <h2>Keranjang Belanja</h2>
+
+      <!-- Tabel Keranjang -->
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Gambar</th>
+            <th>Nama Buku</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Isi tabel dengan barang yang ada di keranjang -->
+          <tr>
+            <td>1</td>
+            <td><img src="img/buku 4.jpg" alt="Buku 1" /></td>
+            <td>Tuhan Ada Di Hatimu</td>
+            <td>Rp 64.000</td>
+            <td>2</td>
+            <td>Rp 128.000</td>
+            <td><button class="btn btn-danger">Hapus</button></td>
+          </tr>
+          <!-- Tambahan baris sesuai jumlah barang yang ada di keranjang -->
+        </tbody>
+      </table>
+
+      <!-- Total Pembelian -->
+      <div class="total">
+        <strong>Total Pembelian: Rp 128.000</strong>
+      </div>
+
+      <!-- Tombol Checkout -->
+      <div class="checkout-btn">
+        <button class="btn btn-primary" onclick="redirectToCheckout()">Checkout</button>
+      </div>
+      <div class="back-btn" style="margin-top: 20px;">
+        <a href="index_login.html" class="btn btn-secondary">Kembali</a>
+      </div>
+      <script>
+        function redirectToCheckout() {
+
+          window.location.href = "checkout.html";
+        }
+      </script>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="#">Bantuan</a>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat dan Ketentuan</a>
+    </div>
+
+    <div class="footer2">
+      <p>&copy; 2023 K_One Book</p>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

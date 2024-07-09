@@ -1,0 +1,149 @@
+/* Tombol */
+.tombol {
+  padding: 0px;
+  border: 1px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  margin: 0 auto; /* Untuk membuat tombol berada di tengah */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombol:hover {
+  transform: scale(1.2);
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 0px;
+  background-color: #f8f9fa;
+}
+
+footer {
+  background-color: #0066ffe0;
+}
+
+/* Add your existing styles and any additional styles needed */
+
+/* Book Showcase Styles */
+.book-showcase {
+  padding: 40px 0;
+  background-color: #f8f9fa; /* Set background color as needed */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align to the left */
+}
+
+.book-card {
+  width: calc(20% - 20px); /* 20% width with margin */
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+  max-width: 100%;
+  width: 200;
+  height: 300;
+  border-radius: 5px;
+}
+
+.book-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.book-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.book-card button {
+  background-color: #007bff; /* Set button color as needed */
+  color: #ffffff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* "Lihat Lainnya" Link Styles */
+.book-showcase {
+  padding: 40px 0;
+  background-color: #f8f9fa; /* Set background color as needed */
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-more a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-more a:hover {
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around; /* Menyusun ikon media sosial dengan jarak yang merata */
+  align-items: center; /* Menyusun ikon media sosial secara vertikal di tengah */
+  margin-top: 20px; /* Margin atas antara kolom dengan konten di atasnya */
+}
+
+.tombol1 {
+  text-align: left; /* Pusatkan ikon dalam setiap kolom */
+}
+
+.tombol1 img {
+  border: 2px solid #fff; /* Tambahkan border putih pada gambar */
+  border-radius: 50%; /* Buat gambar menjadi lingkaran */
+  transition: transform 0.3s ease-in-out; /* Animasi ketika mengarahkan kursor ke gambar */
+}
+
+.tombol1 img:hover {
+  transform: scale(1.2); /* Perbesar gambar saat kursor diarahkan ke atasnya */
+}
+
+/* site maps */
+.sitem {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.a {
+  text-decoration: none;
+  color: #333; /* Ubah warna teks sesuai kebutuhan */
+  font-weight: bold; /* Jika diinginkan, sesuaikan ketebalan teks */
+  transition: color 0.3s; /* Animasi perubahan warna */
+}
+
+.a:hover {
+  color: #ff4500; /* Ubah warna saat dihover sesuai kebutuhan */
+}

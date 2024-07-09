@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Buku - K_One Book  </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../img/1699965125248.png" />
+    <style>
+      body {
+        padding-top: 70px;
+      }
+
+      .book-details {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .back-btn { 
+        margin-top: 20px;
+      }
+
+      /* Footer style */
+      .footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footer2 {
+        background-color: #0066ffe0;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <main style="padding-top: 70px">
+        <header class="p-3 bg-primary text-white fixed-top">
+          <div class="container" >
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <img src="../img/1699965125248.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />
+              <h3>K_One Book</h3>
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></ul>
+  
+              <form class="d-flex">
+                <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600; font-family:sans-serif"> Kategori </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="#">Buku Sejarah</a></li>
+                      <li><a class="dropdown-item" href="#">Kamus Bahasa</a></li>
+                      <li><a class="dropdown-item" href="#">Majalah</a></li>
+                      <li><a class="dropdown-item" href="#">Buku Romance</a></li>
+                      <li><a class="dropdown-item" href="#">Buku Kitab</a></li>
+                      <li><a class="dropdown-item" href="#">Buku Novel</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <input class="form-control me-2" type="search" placeholder="Cari Buku" aria-label="Search" />
+                <button class="btn btn-outline-light me-4" type="submit" style="font-weight: 600; font-family:sans-serif">Cari</button>
+              </form>
+              <div class="text-end">
+                <a href="keranjang.html">
+                  <img src="../img/Desain tanpa judul (9).png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-4" />
+                </a>
+              </div>
+              <div class="text-end">
+                <img src="../img/profil.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-4" />
+            </div>
+            </div>
+          </div>
+        </header>
+      </main>
+
+    <!-- Content -->
+    <div class="container">
+      <h2>Detail Buku</h2>
+
+      <!-- Informasi Buku -->
+      <div class="book-details">
+        <img src="../img/buku 11.jpg" alt="Buku Tenggelamnya Kapal Van der Wijck" class="img-fluid mb-3" width="300" height="450" />
+        <h3>Kisah Tanah Jawa</h3>
+        <p>Penulis: Bonaventura D. Genta & Mada Zidan</p>
+        <p>Harga: Rp 66.000</p>
+        <p>
+          Deskripsi: Kisah Tanah Jawa adalah buku awal yang ditulis oleh Kisah Tanah Jawa, yang diterbitkan oleh GagasMedia pada tahun 2018 berisi 250 halaman. Seperti biasa Kisah Tanah Jawa menghadirkan konten yang cukup mistis berbanding lurus dengan fakta sejarah yang mereka usung.
+        </p>
+      </div>
+
+      <div class="checkout-btn">
+        <button type="submit" class="btn btn-primary" onclick="redirectToCheckout()">Beli</button>
+      </div>
+      <script>
+        function redirectToCheckout() {
+
+          window.location.href = "../Beli/checkout11.html";
+        }
+      </script>
+    </form>
+      <!-- Tombol Kembali -->
+      <div class="back-btn">
+        <a href="../index_login.html" class="btn btn-secondary">Kembali</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="#">Bantuan</a>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat dan Ketentuan</a>
+    </div>
+
+    <div class="footer2">
+      <p>&copy; 2023 K_One Book</p>
+    </div>
+
+    <!-- Script Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

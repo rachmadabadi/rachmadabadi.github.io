@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <link rel="shortcut icon" href="img/1699965125248.png" />
+    <title>K_One Book</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/headers.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none; 
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    <!-- HEADER -->
+    <main style="padding-top: 70px">
+      <header class="p-3 bg-primary text-white fixed-top">
+        <div class="container" >
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="img/1699965125248.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />
+            <h3>K_One Book</h3>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></ul>
+
+            <form class="d-flex">
+              <ul class="navbar-nav me-4 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 600; font-family:sans-serif"> Kategori </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="#">Buku Sejarah</a></li>
+                    <li><a class="dropdown-item" href="#">Kamus Bahasa</a></li>
+                    <li><a class="dropdown-item" href="#">Majalah</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Romance</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Kitab</a></li>
+                    <li><a class="dropdown-item" href="#">Buku Novel</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <input class="form-control me-2" type="search" placeholder="Cari Buku" aria-label="Search" />
+              <button class="btn btn-outline-light me-4" type="submit" style="font-weight: 600; font-family:sans-serif">Cari</button>
+            </form>
+            <div class="text-end">
+              <a href="keranjang.html">
+                <img src="img/Desain tanpa judul (9).png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-4" />
+              </a>
+            </div>
+            <div class="text-end">
+                <img src="img/profil.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-4" />
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- CAROUSEL -->
+    <div class="mt-1" id="beranda">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/3.png" class="d-block w-100" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/1.png" class="d-block w-100" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/2.png" class="d-block w-100" alt="Third slide" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Pilihan Buku -->
+    <!-- <div class="jumbotron jumbotron-fluid">
+      <div class="container"> -->
+        <!-- <div class="row" style="padding-top: 50px"> -->
+          <!-- <div class="col-md-3"> -->
+            <!-- <div class="tombol">
+              <a href="https://instagram.com/just_clown07"><img src="img/f1.png" width="90" height="90" class="rounded-circle" /></a>
+            </div>
+            <br>
+              <p style="text-align: center; font-weight: 700; font-family: sans-serif ;">Buku Pilihan</p>
+          </div>
+          <div class="col-md-3">
+            <div class="tombol">
+              <a href="mailto:rachmadabadi7@gmail.com"><img src="img/f2.png" width="90" height="90" class="rounded-circle" /></a>
+            </div>
+              <br>
+              <p style="text-align: center; font-weight: 700; font-family: sans-serif ;">Buku Internasional</p>
+          </div>
+          <div class="col-md-3">
+            <div class="tombol">
+              <a href="wa.me/6282237396897"><img src="img/f3.png" width="90" height="90" /></a>
+            </div>
+            <br>
+              <p style="text-align: center; font-weight: 700; font-family: sans-serif ;">Pelatihan Skill</p>
+          </div>
+          <div class="col-md-3">
+            <div class="tombol">
+              <a href="https://www.facebook.com/achmad.ady.376"><img src="img/f4.png" width="90" height="90" /></a>
+            </div>
+            <br>
+              <p style="text-align: center; font-weight: 700; font-family: sans-serif ;">Alat Tulis</p>
+          </div> -->
+        <!-- </div> -->
+      <!-- </div>
+    </div> -->
+    
+    <!-- Rekomendasi Buku -->
+    <section class="book-showcase">
+      <div class="container" id="produk">
+        <div class="section-header">
+          <h2>Rekomendasi Buku</h2>
+          <div class="view-more"><a href="#">Lihat Lainnya</a></div>
+        </div>
+        <!-- Book Cards -->
+        <style>
+          .book-card {
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          
+          .book-card:hover {
+              transform: scale(1.05);
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+          
+          .book-card img {
+              width: 200px;
+              height: 300px;
+          }
+          
+          .book-card h3, .book-card p, .book-card h4 {
+              margin: 0;
+              padding: 5px 0;
+          }
+          
+          .book-card button {
+              margin-top: 10px;
+              padding: 10px;
+              background-color: #0066ff;
+              color: white;
+              border: none;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+          }
+          
+          .book-card button:hover {
+              background-color: #004cbf;
+          }
+      </style>
+        <div class="book-cards">
+          <!-- Sample Book Cards -->
+          <div class="book-card">
+            <a href="buku/buku1.html">
+              <img src="img/buku 1.jpg" alt="buku 1" width="200" height="300">
+            </a>
+            <h3>Tenggelamnya Kapal Van der Wijck</h3>
+            <p> Abdul Malik Karim Amrullah</p><br>
+            <h4 style="color:#0066ffe0;">Rp 76.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku2.html">
+              <img src="img/buku2.png" alt="buku 2" width="200" height="300">
+            </a>
+            <h3>Sejarah Dunia yang Disembunyikan</h3>
+            <p> Jonathan Black</p><br>
+            <h4 style="color:#0066ffe0;">Rp 108.000</h4>
+            <button>Tambahkan</button>
+          </div>
+
+          <div class="book-card">
+            <a href="buku/buku4.html">
+              <img src="img/buku 4.jpg" alt="buku 3" width="200" height="300">
+            </a>
+            <h3>Tuhan Ada Di Hatimu</h3><br>
+            <p>Husein Ja'far Al-Hadar</p><br>
+            <h4 style="color:#0066ffe0;">Rp 64.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku3.html">
+              <img src="img/buku3.jpg" alt="buku 4" width="200" height="300">
+            </a>
+            <h3>Kisah 1001 Malam (Bagian 1)</h3>
+            <p> Abu Abdullah Muhammad al-Jihsiyari</p>
+            <h4 style="color:#0066ffe0;">Rp 75.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku5.html">
+              <img src="img/buku 5.jpg" alt="buku 5"width="200" height="300">
+            </a>
+            <h3>Manusia Indonesia</h3><br>
+            <p> Mochtar Lubis</p><br>
+            <h4 style="color:#0066ffe0;">Rp 55.000</h4>
+            <button>Tambahkan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUku Populer -->
+    <section class="book-showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>Buku Terpopuler</h2>
+          <div class="view-more"><a href="#">Lihat Lainnya</a></div>
+        </div>
+        <!-- Book Cards -->
+        <div class="book-cards">
+          <!-- Sample Book Cards -->
+          <div class="book-card">
+            <a href="buku/buku6.html">
+              <img src="img/buku6.jpg" alt="buku 1" width="200" height="300">
+            </a>
+            <h3>Hati Suhita</h3><br>
+            <p> Khilma Anis</p><br>
+            <h4 style="color:#0066ffe0;">Rp 94.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku8.html">
+              <img src="img/buku 8.jpeg" alt="buku 2" width="200" height="300">
+            </a>
+            <h3>Ivanna Van Dijk</h3><br>
+            <p>Risa Saraswati</p><br>
+            <h4 style="color:#0066ffe0;">Rp 57.000</h4>
+            <button>Tambahkan</button>
+          </div>
+
+          <div class="book-card">
+            <a href="buku/buku7.html">
+              <img src="img/buku7.jpg" alt="buku 3" width="200" height="300">
+            </a>
+            <h3>172 Days</h3><br>
+            <p>Nadzira Shafa</p><br>
+            <h4 style="color:#0066ffe0;">Rp 81.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku9.html">
+              <img src="img/buku9.jpg" alt="buku 4" width="200" height="300">
+            </a>
+            <h3>Laskar Pelangi</h3><br>
+            <p>Andrea Hirata</p><br>
+            <h4 style="color:#0066ffe0;">Rp 55.000</h4>
+            <button>Tambahkan</button>
+          </div>
+  
+          <div class="book-card">
+            <a href="buku/buku11.html">
+              <img src="img/buku 11.jpg" alt="buku 5" width="200" height="300">
+            </a>
+            <h3>Kisah Tanah Jawa</h3><br>
+            <p>Bonaventura D. Genta & Mada Zidan</p>
+            <h4 style="color:#0066ffe0;">Rp 66.000</h4>
+            <button>Tambahkan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    
+    <!-- Footer -->
+    <style>
+      .footer {
+        background-color: #f8f8f8; /* Warna latar belakang footer */
+        padding: 20px; /* Padding di sekitar footer */
+        text-align: center; /* Menyelaraskan teks di tengah */
+        }
+
+      .footer a {
+        color: #007bff; /* Warna teks link */
+        margin: 0 70px; /* Jarak antar link */
+        text-decoration: none; /* Menghilangkan garis bawah pada link */
+        font-weight: bold; /* Membuat teks link tebal */
+      }
+
+      .footer a:hover {
+          text-decoration: underline; /* Menambahkan garis bawah saat link di-hover */
+      }
+    </style>
+
+    <div class="footer">
+      <a href="#">Tentang Kami</a>
+      <a href="#">Portofolio</a>
+      <a href="#">Ulasan</a>
+      <a href="#">Alamat</a>
+      <a href="#">Kebijakan & Privasi</a>
+    </div>
+
+    <style>
+      .footer2 {
+        background-color: #f8f8f8; /* Warna latar belakang footer */
+        padding: 20px; /* Padding di sekitar footer */
+        }
+
+        .footer-content {
+            display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+            align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+            justify-content: space-between; /* Menyelaraskan teks dan logo di sisi yang berlawanan */
+        }
+
+        .footer-text {
+            flex-grow: 1; /* Membuat teks mengisi ruang yang tersisa */
+            text-align: center; /* Menyelaraskan teks di tengah */
+            font-size: 18px; /* Ukuran font untuk teks */
+            font-weight: bold; /* Membuat teks tebal */
+        }
+
+        .footer-logo img {
+            height: 30px; /* Tinggi logo, bisa disesuaikan */
+            width: auto; /* Menjaga rasio aspek logo */
+        }
+
+    </style>
+
+    <div class="footer2">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/K_ONE Book.png" alt="Logo">
+        </div>
+          <div class="footer-text">
+              Toko Buku Lengkap, Aman Dan Terpercaya
+          </div>
+      </div>
+  </div>
+  
+
+  <style>
+    .footer3 {
+      background-color: #0066ffe0; /* Warna latar belakang footer */
+      padding: 20px; /* Padding di sekitar footer */
+      }
+  </style>
+
+  <div class="footer3">
+  </div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body> 
+</html>

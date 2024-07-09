@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cetak Pemesanan - K_One Book</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../img/1699965125248.png" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+
+      .order-summary {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .print-btn {
+        margin-top: 20px;
+      }
+
+      /* Footer style */
+      .footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .footer a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      .footer2 {
+        background-color: #0066ffe0;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <main style="padding-top: 70px">
+      <header class="p-3 bg-primary text-white fixed-top">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="../img/1699965125248.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />
+            <h3>K_One Book</h3>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- Content -->
+    <div class="container">
+      <h2>Cetak Pemesanan</h2>
+
+      <!-- Informasi Pemesanan -->
+      <div class="order-summary">
+        <h4>Detail Pemesanan</h4>
+        <p>Nama Pemesan: Rachmad Abadi</p>
+        <p>Alamat Pengiriman: Dsn Koripan, Ds. Bangsongan, Kec. Kayen Kidul, Kab. Kediri</p>
+        <p>Kode Pos: 6521</p>
+        <p>No. HP: 082237396897</p>
+
+        <h4>Produk yang Dipesan</h4>
+        <ul>
+          <li>Tuhan Ada Di Hatimu - Rp 64.000</li>
+        </ul>
+
+        <h4>Total Harga: Rp 64.000</h4>
+      </div>
+
+      <!-- Tombol Cetak -->
+      <div class="print-btn">
+        <button class="btn btn-success" onclick="window.print()">Cetak</button>
+      </div>
+      <div class="back-btn" style="margin-top: 20px">
+        <a href="../index_login.html" class="btn btn-secondary">Kembali</a>
+      </div>
+    </div>
+
+    <!-- Foote -->
+    <!-- Footer -->
+    <div class="footer">
+      <a href="#">Bantuan</a>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Syarat dan Ketentuan</a>
+    </div>
+
+    <div class="footer2">
+      <p>&copy; 2023 K_One Book</p>
+    </div>
+
+    <!-- Script Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
